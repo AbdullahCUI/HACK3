@@ -28,6 +28,22 @@
     printf("Please Enter current day:");
 
     scnaf("%i",  &current_day);
+
+    printf("Please enter Your Use GB");
+
+    scanf("%f", &use_gb);
+
+    if(plan_gb > use_gb){
+        printf("Your are allow to use Data");
+    } else if (plan_gb < use_gb){
+        printf("Your under the Montly allowence");
+    }else  {
+        printf("You are right on track with in your monthly data allownece:");
+    } if (remaining_gb<0){
+        printf("You have run out of data of month:");
+    } else {
+    
+    }
     
    
 
