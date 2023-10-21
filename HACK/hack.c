@@ -7,29 +7,29 @@
  * Department:SE
  * subject:PF
   **/
+#include<stdio.h>
 
+#include<stdlib.h>
  int main(){
 
-    int days;
+    float plan_gb;
+    int current_day;
+    float use_gb;
 
-    printf("Please Seclect Pakeg=>");
-    printf("Pakegs for 30 days:");
+    int days_remaing=30-current_day+1;
+    float remaining_gb=plan_gb - use_gb;
 
-    scanf("%d", & days);
+    float daily_usege_allow=remaining_gb/days_remaing;
 
-   switch(days){
+    printf("Please Enter Your Plane GB=>");
 
-    printf("Select Option to seclect pakeg");
+    scanf("%f", & plan_gb);
 
-    case 1:
-        printf("This Pakeg For 30 day,s");
-        printf("200 GB data ");
-        printf("Price is 400:");
+    printf("Please Enter current day:");
 
-        break;
+    scnaf("%i",  &current_day);
+    
+   
 
-        case 2:
-        printf("")
-    }
-
+   
  }
