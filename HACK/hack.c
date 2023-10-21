@@ -25,25 +25,25 @@
 
     scanf("%f", & plan_gb);
 
-    printf("Please Enter current day:");
+    printf("Please Enter current day:=>");
 
-    scnaf("%i",  &current_day);
+    scanf("%i",  &current_day);
 
-    printf("Please enter Your Use GB");
+    printf("Please enter Your Use GB=>");
 
     scanf("%f", &use_gb);
 
     if(plan_gb > use_gb){
-        printf("Your are allow to use Data");
+        printf("Your are allow to use Data\n");
     } else if (plan_gb < use_gb){
-        printf("Your under the Montly allowence");
+        printf("Your under the Montly allowence\n");
     }else  {
-        printf("You are right on track with in your monthly data allownece:");
+        printf("You are right on track with in your monthly data allownece:\n");
     } if (remaining_gb<0){
-        printf("You have run out of data of month:");
+        printf("You have run out of data from the month:\n");
     } else {
-     printf("You Have %.2f GB remaining for month",remaining_gb );
-     printf("On the rest of month you have use %.2f GB data in month", daily_usege_allow);
+     printf("You Have %.2f GB remaining for month\n",remaining_gb );
+     printf("On the rest of month you have use %.2f GB data in month\n", daily_usege_allow);
     }
     
    
