@@ -42,7 +42,8 @@
     } if (remaining_gb<0){
         printf("You have run out of data of month:");
     } else {
-    
+     printf("You Have %.2f GB remaining for month",remaining_gb );
+     printf("On the rest of month you have use %.2f GB data in month", daily_usege_allow);
     }
     
    
