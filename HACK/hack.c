@@ -16,10 +16,7 @@
     int current_day;
     float use_gb;
 
-    int days_remaing=30-current_day+1;
-    float remaining_gb=plan_gb - use_gb;
-
-    float daily_usege_allow=remaining_gb/days_remaing;
+    
 
     printf("Please Enter Your Plane GB=>");
 
@@ -32,6 +29,13 @@
     printf("Please enter Your Use GB=>");
 
     scanf("%f", &use_gb);
+
+
+    int days_remaing=30 - current_day + 1;
+    float remaining_gb= plan_gb - use_gb;
+
+    float daily_usege_allow= remaining_gb / days_remaing;
+
 
     if(plan_gb > use_gb){
         printf("Your are allow to use Data\n");
