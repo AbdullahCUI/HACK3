@@ -43,11 +43,13 @@
         printf("Your under the Montly allowence\n");
     }else  {
         printf("You are right on track with in your monthly data allownece:\n");
-    } if (remaining_gb<0){
+    } if (remaining_gb<=0){
         printf("You have run out of data from the month:\n");
     } else {
-     printf("You Have %.2f GB remaining for month\n",remaining_gb );
-     printf("On the rest of month you have use %.2f GB data in month\n", daily_usege_allow);
+     printf("You Have %.5f GB remaining for month\n",remaining_gb );
+
+
+     printf("On the rest of month you have allow to use %.5f GB data every day\n", daily_usege_allow);
     }
     
    
